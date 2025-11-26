@@ -1,4 +1,4 @@
-import { Line, Lines } from "@code-hike/lighter"
+import { Line, Lines } from "@autovation/lighter"
 import { TokensRenderer, tokensToContent } from "./tokens"
 import { BrightProps } from "./types"
 

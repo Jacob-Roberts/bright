@@ -5,7 +5,7 @@ import {
   Tokens,
   Annotation,
   getThemeColorsSync,
-} from "@code-hike/lighter"
+} from "@autovation/lighter"
 import brightComponents from "./components"
 import type { ReactNode } from "react"
 

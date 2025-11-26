@@ -2,7 +2,7 @@ import {
   Theme,
   getThemeColorsSync,
   highlight as light,
-} from "@code-hike/lighter"
+} from "@autovation/lighter"
 import { TitleBar } from "./title"
 import { LinesComponent } from "./lines"
 import { BrightProps, CodeProps } from "./types"

@@ -2,7 +2,7 @@ import {
   extractAnnotations,
   LANG_NAMES,
   LanguageAlias,
-} from "@code-hike/lighter"
+} from "@autovation/lighter"
 import components from "./components"
 import { BrightCode } from "./code"
 import {

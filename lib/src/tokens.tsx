@@ -1,4 +1,4 @@
-import { Token, TokenGroup, Tokens } from "@code-hike/lighter"
+import { Token, TokenGroup, Tokens } from "@autovation/lighter"
 import { BrightProps } from "./types"
 
 export function TokensRenderer({

@@ -1,5 +1,5 @@
 {
-  "name": "bright",
+  "name": "@autovation/bright",
   "version": "1.0.0",
   "type": "module",
   "module": "./dist/index.js",
@@ -17,7 +17,7 @@
     "watch": "tsup src/index.tsx --format esm --watch --dts"
   },
   "dependencies": {
-    "@code-hike/lighter": "^1.0.2",
+    "@autovation/lighter": "^1.0.2",
     "server-only": "^0.0.1"
   },
   "devDependencies": {
