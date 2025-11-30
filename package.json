@@ -7,10 +7,10 @@
     ]
   },
   "scripts": {
-    "dev": "yarn workspace bright watch & yarn workspace bright-web dev",
+    "dev": "yarn workspace @autovation/bright watch & yarn workspace bright-web dev",
     "changeset": "changeset",
     "version": "changeset version",
-    "build": "yarn workspace bright build",
+    "build": "yarn workspace @autovation/bright build",
     "release": "yarn build && changeset publish"
   },
   "repository": "code-hike/bright",
