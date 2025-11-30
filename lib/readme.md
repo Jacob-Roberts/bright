@@ -1,3 +1,5 @@
+Forked from <https://github.com/code-hike/bright>
+
 > the future is bright
 
 ## Usage
@@ -16,7 +18,7 @@ export default function Page() {
 }
 ```
 
-Docs: https://bright.codehike.org
+Docs: <https://bright.codehike.org>
 
 ## Credits
 

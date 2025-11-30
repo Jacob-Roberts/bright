@@ -4,21 +4,27 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch: {}
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
   release:
     name: Release
+    if: ${{ github.repository_owner == 'Jacob-Roberts' }}
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write # Required for OIDC
+      contents: write # To push changes back to the repository
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v5
 
-      - name: Setup Node.js 16.x
-        uses: actions/setup-node@v3
+      - name: Setup Node.js 24.x
+        uses: actions/setup-node@v4
         with:
-          node-version: 16.x
+          node-version: 24.x
+          registry-url: "https://registry.npmjs.org"
 
       - name: Install Dependencies
         run: yarn
@@ -36,7 +42,8 @@ jobs:
           publish: yarn release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          # Use OIDC for npm authentication instead of NPM_TOKEN
+          NPM_TOKEN: "" # https://github.com/changesets/changesets/issues/1152#issuecomment-3190884868
 
       - name: Push changes
         if: steps.version.outputs.changes == 'true'

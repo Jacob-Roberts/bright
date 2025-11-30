@@ -5,7 +5,10 @@
   "module": "./dist/index.js",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "repository": "https://github.com/code-hike/bright",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jacob-Roberts/bright.git"
+  },
   "homepage": "https://bright.codehike.org",
   "funding": "https://github.com/code-hike/bright?sponsor=1",
   "license": "MIT",
