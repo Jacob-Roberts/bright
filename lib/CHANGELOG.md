@@ -1,5 +1,11 @@
 # bright
 
+## 1.0.1
+
+### Patch Changes
+
+- fab8e8f: Add trusted publishing and update readme with fork info
+
 ## 1.0.0
 
 ### Major Changes
